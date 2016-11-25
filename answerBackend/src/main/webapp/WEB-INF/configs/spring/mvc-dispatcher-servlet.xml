@@ -32,6 +32,7 @@
 	<!-- 静态资源处理， css， js， imgs 	-->
 	<mvc:resources mapping="/backend/**" location="/WEB-INF/backend/" />
 	<mvc:resources mapping="/login/**" location="/WEB-INF/login/" />
+	<mvc:resources mapping="/upload/**" location="/WEB-INF/upload/" />
 
 	<!-- 注册拦截器-->
 	<mvc:interceptors>
