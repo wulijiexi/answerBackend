@@ -22,25 +22,34 @@
 <body>
     <div style="background-color:#ffffff;">
     <div class="container">
+        <h2>习题解析后台</h2>
         <div class="row" >
-        <div class="col-lg-12">
-            <h2>习题解析后台</h2>
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped">
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>图文标题</th>
-                        <th>分类</th>
-                        <th>操作</th>
-                    </tr>
-                    </thead>
-                    <tbody id="articleList">
-
-                    </tbody>
-                </table>
+            <div class="form-group col-lg-3" >
+                <input class="form-control text-muted" placeholder="按图文标题查询"   id='grade'	required oninput="queryStudents()">
             </div>
-        </div>
+            <div class="form-group col-lg-3" >
+                <select class="form-control text-muted"    id='articleType'	onchange="queryStudents()"></select>
+            </div>
+            <div class="form-group col-lg-3" >
+            <a type="button" class="btn btn-primary" href="articleContent" target= "_blank">新建习题</a>
+            </div>
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>图文标题</th>
+                            <th>分类</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id="articleList">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     </div>
